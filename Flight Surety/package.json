@@ -1,0 +1,53 @@
+{
+  "name": "flightsurety",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "repository": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "truffle test ./test/flightSurety.js",
+    "dapp": "webpack-dev-server --mode development --config webpack.config.dapp.js",
+    "dapp:prod": "webpack --mode production  --config webpack.config.dapp.js",
+    "server": "rm -rf ./prod/server && webpack --config webpack.config.server.js"
+  },
+  "author": "shubham rawal<shubhamrawal4@gmail.com> ",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "bn.js": "^5.0.0",
+    "chai": "^4.2.0",
+    "css-loader": "^3.2.0",
+    "express": "^4.17.1",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "openzeppelin-solidity": "^2.3.0",
+    "request": "2.79.0",
+    "solhint": "^2.1.2",
+    "start-server-webpack-plugin": "^2.2.5",
+    "style-loader": "^1.0.0",
+    "superstatic": "^6.0.4",
+    "truffle": "^5.0.30",
+    "truffle-assertions": "^0.9.1",
+    "truffle-hdwallet-provider": "1.0.15",
+    "web3": "^1.2.1",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.0.0"
+  }
+}
